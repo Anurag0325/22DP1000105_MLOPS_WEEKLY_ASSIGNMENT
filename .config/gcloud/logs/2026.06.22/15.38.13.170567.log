@@ -1,0 +1,116 @@
+2026-06-22 15:38:13,360 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2026-06-22 15:38:13,448 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'list']
+2026-06-22 15:38:13,450 DEBUG    root            Running [gcloud.services.list] with arguments: [--enabled: "True"]
+2026-06-22 15:38:13,454 DEBUG    root            On GCE from server: True
+2026-06-22 15:38:13,459 DEBUG    root            On GCE from memory cache: True
+2026-06-22 15:38:13,684 DEBUG    root            Chosen display Format:
+          table(
+            config.name:label=NAME:sort=1,
+            config.title
+          )
+        
+2026-06-22 15:38:13,684 INFO     root            Display format: "
+          table(
+            config.name:label=NAME:sort=1,
+            config.title
+          )
+        "
+2026-06-22 15:38:13,688 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2026-06-22 15:38:13,812 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/project-eac74fb9-0e15-492a-ab1/services?alt=json&filter=state%3AENABLED&pageSize=200 HTTP/1.1" 403 None
+2026-06-22 15:38:13,817 DEBUG    root            Chosen display Format:default
+2026-06-22 15:38:13,856 DEBUG    root            Chosen display Format:default
+2026-06-22 15:38:13,857 DEBUG    root            Chosen display Format:default
+2026-06-22 15:38:13,858 DEBUG    root            (gcloud.services.list) [39319986440-compute@developer.gserviceaccount.com] does not have permission to access projects instance [project-eac74fb9-0e15-492a-ab1] (or it may not exist): Permission denied to list services for consumer container [projects/39319986440]
+Help Token: AfYMUrjxJaQfze2yaGTVvdOIxFV42vyNCe0ot05y6C3coRmUZdypr1Pk_Ts1sQmJJVD8QHCD-ItYgSc_fFO5TyoyE1yB5ZsFZpZSn8hkbB3R-290. This command is authenticated as 39319986440-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: '110002'
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  reason: AUTH_PERMISSION_DENIED
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 941, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 971, in Run
+    ).Display()
+      ~~~~~~~^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 504, in Display
+    self._printer.Print(self._resources)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 297, in Print
+    for resource in resources:
+                    ^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 207, in __next__
+    item = self._NextItem()
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 179, in _NextItem
+    return next(self._iterable)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+                                        global_params=global_params)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/http_retry.py", line 38, in wrapper
+    return retryer.RetryOnException(func, args, kwargs,
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+                                    should_retry_if=retryIf, sleep_ms=1000)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 198, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/six/__init__.py", line 719, in reraise
+    raise value
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 179, in TryFunc
+    return func(*args, **kwargs), None
+           ~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 1591, in List
+    return self.service_usage.List(request, global_params=global_params)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 316, in List
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://serviceusage.googleapis.com/v1/projects/project-eac74fb9-0e15-492a-ab1/services?alt=json&filter=state%3AENABLED&pageSize=200>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Mon, 22 Jun 2026 15:38:13 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission denied to list services for consumer container [projects/39319986440]\nHelp Token: AfYMUrjxJaQfze2yaGTVvdOIxFV42vyNCe0ot05y6C3coRmUZdypr1Pk_Ts1sQmJJVD8QHCD-ItYgSc_fFO5TyoyE1yB5ZsFZpZSn8hkbB3R-290",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com",
+            "subject": "110002"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "AUTH_PERMISSION_DENIED",
+        "domain": "serviceusage.googleapis.com"
+      }
+    ]
+  }
+}
+>
+2026-06-22 15:38:14,042 ERROR    root            (gcloud.services.list) [39319986440-compute@developer.gserviceaccount.com] does not have permission to access projects instance [project-eac74fb9-0e15-492a-ab1] (or it may not exist): Permission denied to list services for consumer container [projects/39319986440]
+Help Token: AfYMUrjxJaQfze2yaGTVvdOIxFV42vyNCe0ot05y6C3coRmUZdypr1Pk_Ts1sQmJJVD8QHCD-ItYgSc_fFO5TyoyE1yB5ZsFZpZSn8hkbB3R-290. This command is authenticated as 39319986440-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: '110002'
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  reason: AUTH_PERMISSION_DENIED

@@ -1,0 +1,147 @@
+2026-06-22 16:05:25,691 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-06-22 16:05:25,692 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2026-06-22 16:05:25,742 DEBUG    root            On GCE from disk cache: True
+2026-06-22 16:05:25,965 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'list']
+2026-06-22 16:05:25,971 DEBUG    root            Running [gcloud.storage.buckets.list] with arguments: []
+2026-06-22 16:05:25,971 DEBUG    root            Chosen display Format:default
+2026-06-22 16:05:25,972 INFO     root            Display format: "default"
+2026-06-22 16:05:25,974 DEBUG    root            On GCE from memory cache: True
+2026-06-22 16:05:26,000 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-06-22 16:05:26,130 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b?alt=json&maxResults=1000&project=project-eac74fb9-0e15-492a-ab1&projection=full HTTP/1.1" 200 1646
+2026-06-22 16:05:26,148 INFO     ___FILE_ONLY___ ---
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___ cmek_enforcement
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,149 INFO     ___FILE_ONLY___ restrictionMode
+2026-06-22 16:05:26,150 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,150 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,150 INFO     ___FILE_ONLY___ NotRestricted
+2026-06-22 16:05:26,150 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,150 INFO     ___FILE_ONLY___ creation_time
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___ 2026-06-22T15:44:53+0000
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___ csek_enforcement
+2026-06-22 16:05:26,151 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ effectiveTime
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___  '
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ 2026-06-22T15:46:52.776000+00:00
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ '
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,152 INFO     ___FILE_ONLY___ restrictionMode
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ FullyRestricted
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ default_storage_class
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ STANDARD
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ generation
+2026-06-22 16:05:26,153 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ 1782143092962413494
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ gmek_enforcement
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ restrictionMode
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,154 INFO     ___FILE_ONLY___ NotRestricted
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ location
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ US
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ location_type
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ multi-region
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,155 INFO     ___FILE_ONLY___ metageneration
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ 2
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ name
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ public_access_prevention
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,156 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ enforced
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ rpo
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ DEFAULT
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ soft_delete_policy
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,157 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ effectiveTime
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___  '
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ 2026-06-22T15:44:53.526000+00:00
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ '
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___   
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ retentionDurationSeconds
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___  '
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ 604800
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ '
+2026-06-22 16:05:26,158 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ storage_url
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ gs://mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique/
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ uniform_bucket_level_access
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ true
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ update_time
+2026-06-22 16:05:26,159 INFO     ___FILE_ONLY___ :
+2026-06-22 16:05:26,160 INFO     ___FILE_ONLY___  
+2026-06-22 16:05:26,160 INFO     ___FILE_ONLY___ 2026-06-22T15:49:20+0000
+2026-06-22 16:05:26,160 INFO     ___FILE_ONLY___ 
+
+2026-06-22 16:05:26,160 DEBUG    root            SDK update checks are disabled.

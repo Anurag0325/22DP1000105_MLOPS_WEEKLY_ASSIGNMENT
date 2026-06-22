@@ -1,0 +1,114 @@
+2026-06-22 15:14:37,282 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-06-22 15:14:37,314 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2026-06-22 15:14:38,015 DEBUG    root            On GCE from disk cache: True
+2026-06-22 15:14:41,105 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'list']
+2026-06-22 15:14:41,107 DEBUG    root            Running [gcloud.storage.buckets.list] with arguments: []
+2026-06-22 15:14:41,107 DEBUG    root            Chosen display Format:default
+2026-06-22 15:14:41,108 INFO     root            Display format: "default"
+2026-06-22 15:14:41,114 DEBUG    root            On GCE from memory cache: True
+2026-06-22 15:14:41,149 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-06-22 15:14:41,219 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b?alt=json&maxResults=1000&project=project-eac74fb9-0e15-492a-ab1&projection=full HTTP/1.1" 403 1010
+2026-06-22 15:14:41,226 DEBUG    root            (gcloud.storage.buckets.list) HTTPError 403: 39319986440-compute@developer.gserviceaccount.com does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMTllZWZlNS1lM2JlLTcxYzAtODRkYi1lZTlhM2Q4NzRlZjQSAA%3D%3D . This command is authenticated as 39319986440-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/client.py", line 612, in list_buckets
+    for bucket in bucket_iter:
+                  ^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+                                        global_params=global_params)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 563, in List
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://storage.googleapis.com/storage/v1/b?alt=json&maxResults=1000&project=project-eac74fb9-0e15-492a-ab1&projection=full>: response: <{'content-type': 'application/json; charset=UTF-8', 'x-guploader-uploadid': 'AJ5rDhG7z6gLfGE1EM7Ofe0q-RNQbHKUgPP3oP8tqv1HOa7hv-v6sqBenDq6Ib4Z7lfp-JIC', 'date': 'Mon, 22 Jun 2026 15:14:41 GMT', 'vary': 'Origin, X-Origin', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'pragma': 'no-cache', 'content-length': '1010', 'server': 'UploadServer', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "39319986440-compute@developer.gserviceaccount.com does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMTllZWZlNS1lM2JlLTcxYzAtODRkYi1lZTlhM2Q4NzRlZjQSAA%3D%3D .",
+    "errors": [
+      {
+        "message": "39319986440-compute@developer.gserviceaccount.com does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMTllZWZlNS1lM2JlLTcxYzAtODRkYi1lZTlhM2Q4NzRlZjQSAA%3D%3D .",
+        "domain": "global",
+        "reason": "forbidden"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 941, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 971, in Run
+    ).Display()
+      ~~~~~~~^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 504, in Display
+    self._printer.Print(self._resources)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 297, in Print
+    for resource in resources:
+                    ^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/surface/storage/buckets/list.py", line 90, in Run
+    for bucket in wildcard_iterator.get_wildcard_iterator(
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        url.url_string,
+        ^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        soft_deleted_buckets=getattr(args, 'soft_deleted', False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/wildcard_iterator.py", line 429, in __iter__
+    for bucket_resource in self._client.list_buckets(
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        fields_scope=self._fields_scope,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        soft_deleted=self._soft_deleted_buckets,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ):
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/client.py", line 615, in list_buckets
+    core_exceptions.reraise(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cloud_errors.translate_error(e, error_util.ERROR_TRANSLATION)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/client.py", line 612, in list_buckets
+    for bucket in bucket_iter:
+                  ^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+                                        global_params=global_params)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 563, in List
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+googlecloudsdk.api_lib.storage.errors.GcsApiError: HTTPError 403: 39319986440-compute@developer.gserviceaccount.com does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMTllZWZlNS1lM2JlLTcxYzAtODRkYi1lZTlhM2Q4NzRlZjQSAA%3D%3D . This command is authenticated as 39319986440-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+2026-06-22 15:14:41,474 ERROR    root            (gcloud.storage.buckets.list) HTTPError 403: 39319986440-compute@developer.gserviceaccount.com does not have storage.buckets.list access to the Google Cloud project. Permission 'storage.buckets.list' denied on resource (or it may not exist). Remediate access with this Troubleshooter URL or share it with your administrator - https://console.cloud.google.com/iam-admin/troubleshooter/summary;errorId=CiQwMTllZWZlNS1lM2JlLTcxYzAtODRkYi1lZTlhM2Q4NzRlZjQSAA%3D%3D . This command is authenticated as 39319986440-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.

@@ -1,0 +1,17 @@
+{
+  "gcloud": {
+    "overrides": [
+      "/home/jupyter/*"
+    ]
+  },
+  "observability": {
+    "overrides": [
+      "/home/jupyter/*"
+    ]
+  },
+  "vertex": {
+    "overrides": [
+      "/home/jupyter/*"
+    ]
+  }
+}

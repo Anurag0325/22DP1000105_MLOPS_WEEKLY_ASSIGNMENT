@@ -1,0 +1,18 @@
+2026-06-21 09:24:03,562 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-06-21 09:24:05,031 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2026-06-21 09:24:05,033 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "compute/region", VALUE: "us-central1"]
+2026-06-21 09:24:05,130 DEBUG    root            On GCE from disk cache: True
+2026-06-21 09:24:05,131 DEBUG    root            On GCE from memory cache: True
+2026-06-21 09:24:05,213 DEBUG    root            On GCE from memory cache: True
+2026-06-21 09:24:05,271 DEBUG    root            On GCE from memory cache: True
+2026-06-21 09:24:05,330 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2026-06-21 09:24:05,332 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/39319986440-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 154
+2026-06-21 09:24:05,334 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/default/token?scopes=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform%2Chttps%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email HTTP/1.1" 200 868
+2026-06-21 09:24:05,759 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-06-21 09:24:05,920 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/project-eac74fb9-0e15-492a-ab1/regions/us-central1?alt=json HTTP/1.1" 403 None
+2026-06-21 09:24:05,924 WARNING  root            Property validation for compute/region was skipped.
+2026-06-21 09:24:05,925 INFO     ___FILE_ONLY___ Updated property [compute/region].
+
+2026-06-21 09:24:05,926 DEBUG    root            Chosen display Format:default
+2026-06-21 09:24:05,927 INFO     root            Display format: "default"
+2026-06-21 09:24:05,933 DEBUG    root            SDK update checks are disabled.

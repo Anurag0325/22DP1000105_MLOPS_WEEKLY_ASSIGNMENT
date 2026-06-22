@@ -1,0 +1,59 @@
+2026-06-22 15:16:25,104 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-06-22 15:16:25,151 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2026-06-22 15:16:25,153 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2026-06-22 15:16:25,154 DEBUG    root            On GCE from disk cache: True
+2026-06-22 15:16:25,166 DEBUG    root            Chosen display Format:config
+2026-06-22 15:16:25,166 INFO     root            Display format: "config"
+2026-06-22 15:16:25,206 INFO     ___FILE_ONLY___ [compute]
+region = us-central1
+[core]
+account = 39319986440-compute@developer.gserviceaccount.com
+disable_usage_reporting = True
+project = project-eac74fb9-0e15-492a-ab1
+universe_domain = googleapis.com
+[dataproc]
+region = us-central1
+
+2026-06-22 15:16:25,206 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+
+2026-06-22 15:16:25,219 DEBUG    root            On GCE from memory cache: True
+2026-06-22 15:16:25,236 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-06-22 15:16:25,400 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/project-eac74fb9-0e15-492a-ab1?alt=json HTTP/1.1" 403 None
+2026-06-22 15:16:25,401 DEBUG    root            Unable to get project [project-eac74fb9-0e15-492a-ab1] for environment tag message: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects/project-eac74fb9-0e15-492a-ab1?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Mon, 22 Jun 2026 15:16:25 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=23', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Cloud Resource Manager API has not been used in project 39319986440 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=39319986440 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "SERVICE_DISABLED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "consumer": "projects/39319986440",
+          "serviceTitle": "Cloud Resource Manager API",
+          "containerInfo": "39319986440",
+          "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=39319986440",
+          "service": "cloudresourcemanager.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+        "locale": "en-US",
+        "message": "Cloud Resource Manager API has not been used in project 39319986440 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=39319986440 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Google developers console API activation",
+            "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=39319986440"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+2026-06-22 15:16:25,409 DEBUG    root            SDK update checks are disabled.
