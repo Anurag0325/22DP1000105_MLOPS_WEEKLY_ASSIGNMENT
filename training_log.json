@@ -1,0 +1,8 @@
+{
+  "timestamp": "2026-06-22T17-44-55",
+  "accuracy": 0.9512195121951219,
+  "model": "DecisionTreeClassifier",
+  "max_depth": 3,
+  "train_size": 60,
+  "eval_size": 41
+}
