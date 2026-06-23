@@ -1,9 +1,0 @@
-2026-06-22 15:58:52,392 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
-2026-06-22 15:58:52,411 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'login']
-2026-06-22 15:58:52,414 DEBUG    root            Running [gcloud.auth.login] with arguments: []
-2026-06-22 15:58:52,414 DEBUG    root            On GCE from disk cache: True
-2026-06-22 16:03:27,199 INFO     ___FILE_ONLY___ 
-
-Command killed by keyboard interrupt
-
-
