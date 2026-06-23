@@ -1,0 +1,17 @@
+.cache/
+.config/
+.docker/
+.gemini/
+.gsutil/
+.ipynb_checkpoints/
+.ipython/
+.jupyter/
+.local/
+.npm/
+.bash_history
+.lastactive
+iris_train.csv
+iris_eval.csv
+model.pkl
+model_loaded.pkl
+training_log.json

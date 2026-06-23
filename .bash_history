@@ -1,1 +1,0 @@
-gcloud auth login
