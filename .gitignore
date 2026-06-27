@@ -15,3 +15,6 @@ iris_eval.csv
 model.pkl
 model_loaded.pkl
 training_log.json
+.env/
+__pycache__/
+*.pyc
