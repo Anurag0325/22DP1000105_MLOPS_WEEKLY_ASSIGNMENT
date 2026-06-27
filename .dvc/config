@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = gs://mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique/dvc-store
