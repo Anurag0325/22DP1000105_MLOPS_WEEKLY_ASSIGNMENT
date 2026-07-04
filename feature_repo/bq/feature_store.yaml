@@ -1,0 +1,10 @@
+project: iris_feature_store_bq
+provider: gcp
+registry: data/registry_bq.db
+online_store:
+    type: sqlite
+    path: data/online_store_bq.db
+offline_store:
+    type: bigquery
+    dataset: feast_iris_feature_store
+entity_key_serialization_version: 3
