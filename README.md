@@ -1,39 +1,91 @@
-# 22DP1000105 - MLOps Weekly Assignment - Week 1
+# Week 2 - DVC Integration with IRIS Pipeline
 
-## Problem Statement
-Build an end-to-end IRIS classifier ML pipeline on Google Cloud Platform using Vertex AI and Google Cloud Storage.
+## Overview
 
-## Approach
-1. Set up Vertex AI Workbench instance on GCP
-2. Upload IRIS dataset to GCS bucket (train/eval split)
-3. Train DecisionTree classifier fetching data from GCS
-4. Save model artifacts to GCS organized by execution timestamp
-5. Run inference fetching trained model from GCS
+Extends the Week 1 IRIS classification pipeline by integrating DVC
+to version both data and model artifacts backed by Google Cloud Storage.
 
-## Files
-| File | Description |
-|------|-------------|
-| `22DP1000105_Assignment_1_MAY_2026_MLOps.ipynb` | Main notebook with complete pipeline |
-| `data.csv` | Raw IRIS dataset |
-| `.gitignore` | Excludes binary/data files from git |
+## Repository Structure
 
-## GCS Bucket Structure
-gs://mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique/
-├── data/
-│   ├── iris_train.csv
-│   └── iris_eval.csv
-└── artifacts/
-    ├── 2026-06-22T17-35-00/
-    ├── 2026-06-22T17-40-45/
-    └── 2026-06-22T17-44-55/
+    .
+    ├── .dvc/
+    │   └── config                  # DVC remote configuration
+    ├── data/
+    │   └── iris.csv.dvc            # DVC pointer for IRIS dataset
+    ├── model/
+    │   └── iris_model.pkl.dvc      # DVC pointer for trained model
+    ├── train.py                    # Training script with data augmentation
+    ├── metrics.csv                 # Accuracy metrics from latest training run
+    ├── requirements.txt            # Python dependencies
+    └── README.md                   # This file
 
-## Results
-- Model: DecisionTreeClassifier (max_depth=3)
-- Accuracy: 0.951
-- Training Runs: 3 separate runs with timestamped artifact folders
+## Setup Instructions
 
-## Learnings
-- Setting up and navigating GCP and Vertex AI Workbench
-- Using GCS for ML data and artifact management
-- Building reproducible ML pipelines with timestamp-based artifact organization
-- Separating training and inference into distinct scripts
+**1. Clone the repository**
+
+    git clone https://github.com/Anurag0325/22DP1000105_MLOPS_WEEKLY_ASSIGNMENT.git
+    cd 22DP1000105_MLOPS_WEEKLY_ASSIGNMENT
+    git checkout week_2
+
+**2. Create virtual environment**
+
+    python3 -m venv .env
+    source .env/bin/activate
+    pip install dvc dvc-gs scikit-learn pandas numpy
+
+**3. Pull data and model from GCS**
+
+    dvc pull
+
+## Training Script
+
+train.py loads the IRIS dataset, optionally augments it with synthetic
+samples, trains a DecisionTreeClassifier, and saves the model and metrics.
+
+    python train.py 0    # Iteration 1 - base dataset (150 rows)
+    python train.py 30   # Iteration 2 - augmented dataset (240 rows)
+    python train.py 60   # Iteration 3 - augmented dataset (330 rows)
+
+## DVC Remote
+
+- **Backend:** Google Cloud Storage
+- **Bucket:** gs://mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique/dvc-store
+
+## Data Versions
+
+| Tag  | Rows | Description               |
+|------|------|---------------------------|
+| v1.0 | 150  | Base IRIS dataset         |
+| v2.0 | 240  | Augmented (+30 per class) |
+| v3.0 | 330  | Augmented (+60 per class) |
+
+## Switching Between Versions
+
+Switch to a previous version using a tag:
+
+    git checkout v1.0
+    dvc checkout
+
+Return to the latest version:
+
+    git checkout week_2
+    dvc checkout
+
+## Key DVC Commands
+
+| Command            | Description                              |
+|--------------------|------------------------------------------|
+| dvc init           | Initialize DVC in repo                   |
+| dvc remote list    | Show configured remotes                  |
+| dvc add file       | Track a file with DVC                    |
+| dvc push           | Push tracked files to GCS remote         |
+| dvc pull           | Pull tracked files from GCS remote       |
+| dvc checkout       | Restore files to match .dvc pointers     |
+| dvc status         | Show sync status between local and remote|
+
+## Student Info
+
+- **ID:** 22DP1000105
+- **Course:** MLOps Weekly Assignment
+- **Week:** 2
+- **Term:** MAY 2026
