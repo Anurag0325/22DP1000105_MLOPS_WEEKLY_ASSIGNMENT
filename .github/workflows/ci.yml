@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   id-token: write
+  pull-requests: write
 
 jobs:
   test:
@@ -41,4 +42,31 @@ jobs:
         run: dvc pull
 
       - name: Run pytest suite
-        run: pytest tests/ -v
+        id: run_tests
+        run: pytest tests/ -v --tb=short 2>&1 | tee test_output.txt
+        continue-on-error: true
+
+      - name: Setup CML
+        uses: iterative/setup-cml@v3
+
+      - name: Publish CML report
+        env:
+          REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "## IRIS Pipeline CI Report" > report.md
+          echo "" >> report.md
+          echo "**Branch:** ${{ github.ref_name }} | **Event:** ${{ github.event_name }}" >> report.md
+          echo "" >> report.md
+          echo "### Test Results" >> report.md
+          echo '```' >> report.md
+          cat test_output.txt >> report.md
+          echo '```' >> report.md
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            cml comment create report.md
+          else
+            cml comment create report.md --commit-sha="${{ github.sha }}"
+          fi
+
+      - name: Fail job if tests failed
+        if: steps.run_tests.outcome == 'failure'
+        run: exit 1
