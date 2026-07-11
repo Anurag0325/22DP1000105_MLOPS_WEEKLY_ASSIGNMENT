@@ -64,7 +64,7 @@ jobs:
           if [ "${{ github.event_name }}" = "pull_request" ]; then
             cml comment create report.md
           else
-            cml comment create report.md --commit-sha="${{ github.sha }}"
+            cml comment create report.md --target="commit/${{ github.sha }}"
           fi
 
       - name: Fail job if tests failed
