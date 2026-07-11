@@ -120,12 +120,6 @@ No long-lived keys or secrets are stored in GitHub. GitHub's OIDC identity token
 | `gh pr create` (or GitHub UI) | Open a pull request from `week_4` into `main` |
 | `cml comment create report.md` | (used inside CI) Publish test report as PR/commit comment |
 
-## Branch History
-- `week_1` - Initial IRIS pipeline on Vertex AI
-- `week_2` - DVC integration with GCS remote, data versioning (v1.0-v3.0)
-- `week_3` - Feast feature store integration
-- `week_4` - CI integration: pytest suite, GitHub Actions with DVC pull via Workload Identity Federation, CML reporting, merged to `main` via pull request
-
 ## Student Info
 - **ID:** 22DP1000105
 - **Course:** MLOps Weekly Assignment
