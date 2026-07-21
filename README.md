@@ -41,9 +41,9 @@ MLflow instead of DVC; DVC continues to track data files only.
 
 **4. Start the MLflow Tracking Server / UI**
 
-    mlflow ui --host 0.0.0.0 --port 5000
+    mlflow ui --host 0.0.0.0 --port 8100
 
-Open http://localhost:5000 (or the GCP VM's external IP:5000) to view
+Open http://<external_ip_address>:8100 (or the GCP VM's external IP:8100) to view
 the Tracking UI.
 
 ## Training Script
