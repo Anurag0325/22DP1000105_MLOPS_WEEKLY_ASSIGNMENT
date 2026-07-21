@@ -18,3 +18,7 @@ training_log.json
 .env/
 __pycache__/
 *.pyc
+*.joblib
+feature_repo/__pycache__/
+feature_repo/bq/data/
+feature_repo/data/*.db
