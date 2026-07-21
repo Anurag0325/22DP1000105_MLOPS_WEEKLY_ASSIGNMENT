@@ -1,0 +1,25 @@
+name: Champion Model CI
+
+on:
+  push:
+    branches: [ week_5 ]
+  workflow_dispatch:
+
+jobs:
+  test-champion-model:
+    runs-on: ubuntu-latest
+    env:
+      MLFLOW_TRACKING_URI: ${{ vars.MLFLOW_TRACKING_URI }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install mlflow pandas scikit-learn pytest
+
+      - name: Run champion model sanity tests
+        run: pytest tests/test_champion_model.py -v
