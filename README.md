@@ -1,202 +1,68 @@
-markdown
+# 22DP1000105 — Assignment 5 (MLOps): MLflow Integration
 
-# Week 5 - MLflow Integration with IRIS Pipeline
+This assignment integrates **MLflow** into the IRIS classification pipeline for experiment tracking and model registry, replacing the DVC-based model tracking used in earlier weeks. DVC continues to be used for data versioning only in prior weeks' history; this week's `data.csv` is tracked directly in git.
 
-## Overview
-Extends the Week 2 IRIS classification pipeline (DVC-based data/model
-versioning) by integrating MLflow for experiment tracking and a model
-registry. Model artifacts are now logged, versioned, and served through
-MLflow instead of DVC; DVC continues to track data files only.
+## Repo Info
 
-## Repository Structure
-    .
-    ├── .dvc/
-    │   └── config                  # DVC remote configuration
-    ├── data/
-    │   └── iris.csv.dvc            # DVC pointer for IRIS dataset
-    ├── mlruns/                     # Local MLflow tracking store (if used)
-    ├── train.py                    # Training script with hyperparameter tuning + MLflow logging
-    ├── evaluate.py                 # Evaluation script - loads model from MLflow Registry
-    ├── metrics.csv                 # Accuracy metrics from latest training run
-    ├── requirements.txt            # Python dependencies
-    └── README.md                   # This file
+- **Branch:** `week_5`
+- **MLflow experiment:** `iris-hpo`
+- **MLflow registered model:** `iris-classifier`
+- **Champion alias:** `champion`
 
-## Setup Instructions
+## Files in This Repository
 
-**1. Clone the repository**
+| File | Purpose |
+|---|---|
+| `22DP1000105_Assignment_5_MAY_2026_MLOps.ipynb` | Main notebook — runs the hyperparameter sweep, logs all runs to MLflow, registers the best model and tags it `champion`, and evaluates that champion model by loading it from the MLflow registry. |
+| `data.csv` | Input dataset — columns `sepal_length, sepal_width, petal_length, petal_width, species` (species is a string label, no encoding needed). |
+| `tests/test_champion_model.py` | Pytest sanity check — loads the champion model via `models:/iris-classifier@champion` and confirms it loads and predicts correctly. Used in CI (Task 6). |
+| `tests/test_model_evaluation.py` | Pytest suite — loads the champion model from the registry and evaluates it against `data.csv`, asserting accuracy/precision/recall exceed set thresholds. |
+| `.github/workflows/champion-model-ci.yml` | GitHub Actions workflow — on every push to `week_5` (or manual trigger), fetches the champion model from the MLflow registry and runs `tests/test_champion_model.py` against it. |
+| `.gitignore` | Excludes local model binaries (`model/`), joblib artifacts, notebook checkpoints, and environment/cache files from version control. |
+| `README.md` | This file. |
 
-    git clone https://github.com/Anurag0325/22DP1000105_MLOPS_WEEKLY_ASSIGNMENT.git
-    cd 22DP1000105_MLOPS_WEEKLY_ASSIGNMENT
-    git checkout week_5
+## MLflow Tracking Server
 
-**2. Create virtual environment**
+Runs on the same GCP Compute Engine VM backing the Vertex AI Workbench instance, inside a `screen` session so it persists across SSH disconnects:
 
-    python3 -m venv .env
-    source .env/bin/activate
-    pip install dvc dvc-gs scikit-learn pandas numpy mlflow
+```bash
+screen -S mlflow_execution
 
-**3. Pull data from GCS (models are no longer stored in DVC)**
-
-    dvc pull
-
-**4. Start the MLflow Tracking Server / UI**
-
-    mlflow ui --host 0.0.0.0 --port 5000
-
-Open http://localhost:5000 (or the GCP VM's external IP:5000) to view
-the Tracking UI.
-
-## Training Script
-
-train.py loads the IRIS dataset, runs hyperparameter tuning across
-multiple configurations, and logs each run's parameters, metrics, and
-trained model to MLflow.
-
-    python train.py --n_estimators 50  --max_depth 3
-    python train.py --n_estimators 100 --max_depth 5
-    python train.py --n_estimators 150 --max_depth 7
-
-Each run is logged as a new MLflow experiment run with:
-- **Params:** n_estimators, max_depth (and any other tuned hyperparameters)
-- **Metrics:** accuracy, precision, recall, f1
-- **Artifact:** the trained model, logged via `mlflow.sklearn.log_model`
-
-## Model Registry
-
-After comparing runs in the Tracking UI, the best-performing run's
-model is registered:
-
-    mlflow models register -m runs:/<RUN_ID>/model -n iris_classifier
-
-Or via the UI: **Run details → Register Model → iris_classifier**
-
-## Evaluation Script
-
-evaluate.py fetches the model directly from the MLflow Model Registry
-by name and version, rather than from DVC or a local path.
-
-    python evaluate.py --model_name iris_classifier --model_version latest
-
-```python
-import mlflow
-
-model = mlflow.pyfunc.load_model(f"models:/iris_classifier/latest")
+mlflow server --host 0.0.0.0 --port 8100 \
+  --backend-store-uri sqlite:////home/$(whoami)/mlflow.db \
+  --allowed-hosts "localhost,127.0.0.1,<EXTERNAL_IP>,<EXTERNAL_IP>:8100,localhost:8100,127.0.0.1:8100" \
+  --cors-allowed-origins "*"
 ```
 
-## DVC Remote
+- Requires firewall rule `allow-mlflow` (ingress, tcp:8100, source `0.0.0.0/0`).
+- **The external IP is ephemeral** and changes on instance restart. Check with `curl -s ifconfig.get me` and update `--allowed-hosts` plus the GitHub Actions repo variable `MLFLOW_TRACKING_URI` if it changes.
+- UI: `http://<EXTERNAL_IP>:8100`
+- The notebook connects via `mlflow.set_tracking_uri("http://localhost:8100")`.
 
-- **Backend:** Google Cloud Storage
-- **Bucket:** gs://mlops-course-project-eac74fb9-0e15-492a-ab1-v4-unique/dvc-store
-- **Scope:** data files only (model tracking removed in this week's assignment)
+## What Was Done
 
-## Experiment Comparison
+1. **Hyperparameter sweep** — `RandomForestClassifier` over `n_estimators ∈ {50,100,200} × max_depth ∈ {2,4,None}` (9 combinations), computing accuracy/precision/recall/F1 for each.
+2. **MLflow tracking** — each combination logged as an MLflow run (`mlflow.log_params`, `mlflow.log_metrics`, `mlflow.sklearn.log_model` with `infer_signature`). The best run by macro-F1 was registered as `iris-classifier` and tagged with the alias `champion`.
+3. **UI comparison** — runs compared side-by-side in the MLflow Tracking UI (parallel-coordinates and table views) to confirm the champion run was among the best performers.
+4. **DVC model tracking removed** — the model artifact is no longer tracked by DVC; it's tracked exclusively through the MLflow Model Registry.
+5. **Registry-based evaluation** — the evaluation cell and `tests/test_model_evaluation.py` load the model via `mlflow.pyfunc.load_model("models:/iris-classifier@champion")` instead of a local or DVC path.
+6. **CI via GitHub Actions** — `champion-model-ci.yml` fetches the champion model from the registry and runs a pytest sanity check on every push, using `MLFLOW_TRACKING_URI` as a repo Actions variable.
 
-|
- Run 
-|
- n_estimators 
-|
- max_depth 
-|
- Accuracy 
-|
-|
------
-|
---------------
-|
------------
-|
-----------
-|
-|
- 1   
-|
- 50           
-|
- 3         
-|
- TBD      
-|
-|
- 2   
-|
- 100          
-|
- 5         
-|
- TBD      
-|
-|
- 3   
-|
- 150          
-|
- 7         
-|
- TBD      
-|
+## Incident & Recovery (worth noting)
 
-See the MLflow Tracking UI for the full side-by-side comparison
-charts and tables.
+Partway through this assignment, the Workbench VM's ephemeral external IP changed after an instance restart, which also terminated the `screen` session running the MLflow server — silently wiping the SQLite-backed experiment/registry data along with it (a fresh, empty `mlflow.db` was effectively in use). This caused GitHub Actions CI to fail with `RESOURCE_DOES_NOT_EXIST: Registered Model with name=iris-classifier not found`.
 
-## Key MLflow Commands
+**Fix:** restarted the MLflow server with the new IP added to `--allowed-hosts`, updated the `MLFLOW_TRACKING_URI` repo variable to match, and re-ran the sweep/logging/registration notebook cells to repopulate the experiment and re-tag the champion alias. CI was re-triggered and passed afterward.
 
-|
- Command                                   
-|
- Description                                  
-|
-|
---------------------------------------------
-|
------------------------------------------------
-|
-|
- mlflow ui                                  
-|
- Launch the Tracking UI                        
-|
-|
- mlflow.start_run()                         
-|
- Begin a new tracked run                       
-|
-|
- mlflow.log_param / log_params              
-|
- Log hyperparameter(s)                         
-|
-|
- mlflow.log_metric / log_metrics            
-|
- Log evaluation metric(s)                      
-|
-|
- mlflow.sklearn.log_model                   
-|
- Log the trained model as an artifact          
-|
-|
- mlflow models register                     
-|
- Register a model version in the Model Registry
-|
-|
- mlflow.pyfunc.load_model("models:/name/v") 
-|
- Load a registered model by name/version       
-|
+**Takeaway:** a SQLite-backed MLflow server on a single ephemeral VM is fine for coursework, but isn't resilient to VM restarts — a production setup would need a persistent backend store (e.g. a managed database) and a stable server address.
 
-## CI Integration (Optional - Task 6)
+## Reproducing This Assignment
 
-The GitHub Actions workflow (`.github/workflows/ci.yml`) fetches the
-latest/best model from the MLflow Model Registry and runs sanity
-checks against it, replacing the previous DVC-based model retrieval
-step.
-
-## Student Info
-- **ID:** 22DP1000105
-- **Course:** MLOps Weekly Assignment
-- **Week:** 5
-- **Term:** MAY 2026
+1. Ensure the MLflow tracking server is running on the VM (see above) and note the current external IP.
+2. Open the notebook and run all cells top to bottom.
+3. Open the MLflow UI at `http://<EXTERNAL_IP>:8100` to inspect `iris-hpo` and `iris-classifier`.
+4. Run tests locally:
+```bash
+   MLFLOW_TRACKING_URI=http://localhost:8100 pytest tests/ -v
+```
+5. Push to `week_5` (or trigger manually) to run CI.
