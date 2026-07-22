@@ -23,3 +23,5 @@ feature_repo/__pycache__/
 feature_repo/bq/data/
 feature_repo/data/*.db
 model/
+.gitconfig
+.lesshst
