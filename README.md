@@ -66,3 +66,10 @@ Partway through this assignment, the Workbench VM's ephemeral external IP change
    MLFLOW_TRACKING_URI=http://localhost:8100 pytest tests/ -v
 ```
 5. Push to `week_5` (or trigger manually) to run CI.
+
+## Student Info
+
+- **ID:** 22DP1000105
+- **Course:** MLOps Weekly Assignment
+- **Week:** 5
+- **Term:** MAY 2026
