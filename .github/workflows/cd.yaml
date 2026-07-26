@@ -32,7 +32,7 @@ jobs:
 
       - name: Build image
         run: |
-          docker build -t ${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO }}/${{ env.IMAGE }}:${{ github.sha }} .
+          docker build --build-arg MLFLOW_TRACKING_URI=${{ vars.MLFLOW_TRACKING_URI }} -t ${{ env.REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ env.REPO }}/${{ env.IMAGE }}:${{ github.sha }} .
 
       - name: Push image
         run: |
