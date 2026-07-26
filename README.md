@@ -1,3 +1,10 @@
+## Student Info
+
+* ID: 22DP1000105
+* Course: MLOps Weekly Assignment
+* Week: 6
+* Term: MAY 2026
+
 # Week 6 — Continuous Deployment for IRIS Inference API
 
 This branch (`week_6`) contains the CD pipeline that containerizes the IRIS
