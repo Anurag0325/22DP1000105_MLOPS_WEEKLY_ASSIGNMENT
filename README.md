@@ -1,9 +1,3 @@
-## Student Info
-
-* ID: 22DP1000105
-* Course: MLOps Weekly Assignment
-* Week: 6
-* Term: MAY 2026
 
 # Week 6 — Continuous Deployment for IRIS Inference API
 
@@ -97,3 +91,10 @@ docker run -d -p 8200:8200 iris-api
 curl -X POST "http://localhost:8200/predict/" -H "Content-Type: application/json" \
   -d '{"sepal_length":5.1,"sepal_width":3.5,"petal_length":1.4,"petal_width":0.2}'
 ```
+
+## Student Info
+
+* ID: 22DP1000105
+* Course: MLOps Weekly Assignment
+* Week: 6
+* Term: MAY 2026
