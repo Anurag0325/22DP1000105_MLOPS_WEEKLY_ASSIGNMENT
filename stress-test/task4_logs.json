@@ -1,0 +1,2802 @@
+[
+  {
+    "insertId": "1o8819dzmg297ida",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:33:10.491328295Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:39504 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:33:06.338728253Z"
+  },
+  {
+    "insertId": "hxrtjwj0zq0ep8fa",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:33:10.929877017Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:54516 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:33:06.328130210Z"
+  },
+  {
+    "insertId": "pw89yimilalminah",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:33:05.926921378Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49908 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:33:05.323661966Z"
+  },
+  {
+    "insertId": "0n1h65db6fpwuknf",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:33:00.489005543Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:58298 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:56.338403535Z"
+  },
+  {
+    "insertId": "tr0fsegtw153yrcf",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:33:00.999787008Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:51174 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:56.327967227Z"
+  },
+  {
+    "insertId": "6gh3w38xlbzy8h54",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:56.021355582Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:34062 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:55.323475029Z"
+  },
+  {
+    "insertId": "4dr6xpbhdpgtovnt",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:55.926527612Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:51160 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:54.099608976Z"
+  },
+  {
+    "insertId": "w6pzg09shgejzsn1",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:56.021355582Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:34052 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:54.057795885Z"
+  },
+  {
+    "insertId": "wyskdoawmip6rznl",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:55.488987303Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:58282 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:50.688741229Z"
+  },
+  {
+    "insertId": "zhz6qjh0y5om2vq4",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:50.487036419Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:55346 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:46.339752492Z"
+  },
+  {
+    "insertId": "qgjfz3b6gx9732f0",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:51.007378258Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:46632 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:46.328336868Z"
+  },
+  {
+    "insertId": "0calan7ymydedwna",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:46.002951504Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:36008 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:45.324827406Z"
+  },
+  {
+    "insertId": "mq01h7o6dhflbpem",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:40.497570902Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:59418 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:36.338425856Z"
+  },
+  {
+    "insertId": "3iqlri76rv10rtw2",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:40.930312050Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:46352 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:36.327385738Z"
+  },
+  {
+    "insertId": "jksx049np3ddnm83",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:35.923291540Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:55562 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:35.324140313Z"
+  },
+  {
+    "insertId": "3br3nqyq3wo4zkp4",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:36.018078566Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:46344 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:34.098712336Z"
+  },
+  {
+    "insertId": "14z4gj22s6v7w1cn",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:35.923291540Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:55558 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:34.056964760Z"
+  },
+  {
+    "insertId": "nvhhiohxtpry035a",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:35.492395233Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:59416 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:30.689595483Z"
+  },
+  {
+    "insertId": "zv40hbovbzxc6e7s",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:30.491406525Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:40182 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:26.338868917Z"
+  },
+  {
+    "insertId": "2qtbt869ilb07ajq",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:30.918376573Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:52622 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:26.328291798Z"
+  },
+  {
+    "insertId": "rd6lrn8haq6cb0ut",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:25.984614369Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:36438 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:25.323479421Z"
+  },
+  {
+    "insertId": "9yrq7pw7ikkijhan",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:20.492628905Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:45240 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:16.339107369Z"
+  },
+  {
+    "insertId": "uc5k0c63x8kaekm0",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:21.018150158Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33310 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:16.327555873Z"
+  },
+  {
+    "insertId": "u9xqe93t3fw83d9q",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:15.922353563Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:53262 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:15.323689722Z"
+  },
+  {
+    "insertId": "72yarzajie7qoa23",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:16.002036171Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33304 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:14.099730779Z"
+  },
+  {
+    "insertId": "bsawwi9bp8e0lg3q",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:15.922353563Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:53254 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:14.060507952Z"
+  },
+  {
+    "insertId": "y19xptscvwwakl2l",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:15.537851107Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:45230 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:10.689022110Z"
+  },
+  {
+    "insertId": "6rxbxujxcsxyr1gg",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:10.570448548Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:41850 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:06.338822010Z"
+  },
+  {
+    "insertId": "z6binkopxwt5fb4d",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:11.007636131Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:60022 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:06.327440817Z"
+  },
+  {
+    "insertId": "gyt8pqb11pozw2pc",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:06.011575326Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:59406 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:32:05.324253743Z"
+  },
+  {
+    "insertId": "7j64tlvsqfil5psz",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:00.657606550Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:48516 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:56.339706948Z"
+  },
+  {
+    "insertId": "8p1awetskxwayj06",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:32:01.014017091Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49500 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:56.328464023Z"
+  },
+  {
+    "insertId": "8wamjf2v5qoa896s",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:56.010231620Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:41158 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:55.323687414Z"
+  },
+  {
+    "insertId": "k20h6re6qeh2w5ue",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:55.924412556Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49488 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:54.098804598Z"
+  },
+  {
+    "insertId": "k66ntx8ut0hbsr8w",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:56.010231620Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:41152 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:54.057435647Z"
+  },
+  {
+    "insertId": "nnflye183wtvyvhl",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:55.493614106Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:48508 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:50.689569595Z"
+  },
+  {
+    "insertId": "xdjtr87hc2c32ui6",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:50.493986076Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:44002 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:46.339081617Z"
+  },
+  {
+    "insertId": "29w94w4v8i8rz5ke",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:50.989330407Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:50760 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:46.333873328Z"
+  },
+  {
+    "insertId": "b81j3bagdcaltolt",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:45.924863101Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:36394 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:45.324535841Z"
+  },
+  {
+    "insertId": "sazhzl5qka706rq0",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:40.575514721Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:59736 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:36.339721152Z"
+  },
+  {
+    "insertId": "pw8r8dep453fwkql",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:41.008949128Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33828 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:36.327896475Z"
+  },
+  {
+    "insertId": "ecbx7f0e25dmxcbc",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:35.925116949Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:40544 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:35.323563013Z"
+  },
+  {
+    "insertId": "d0baqxnkcrmhovtv",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:35.930031113Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33824 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:34.098416005Z"
+  },
+  {
+    "insertId": "fieibwu5lm8xn2dx",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:35.925116949Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:40532 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:34.057838015Z"
+  },
+  {
+    "insertId": "a11oyqz3iysap7cx",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:35.488279459Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:59724 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:30.689704758Z"
+  },
+  {
+    "insertId": "3c5f4iqcdv58c2cz",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:30.492076962Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:37112 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:26.338954235Z"
+  },
+  {
+    "insertId": "qt2gpzj7rxhz6es4",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:31.004573167Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:57216 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:26.327615210Z"
+  },
+  {
+    "insertId": "7g37jwovjnlegxcd",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:25.928203224Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:38594 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:25.323687602Z"
+  },
+  {
+    "insertId": "hzdt97wigg3rwdy8",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:20.506809351Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:58346 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:16.339037501Z"
+  },
+  {
+    "insertId": "n0o7qr9cknh7rs9a",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:20.925484312Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:48804 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:16.328317186Z"
+  },
+  {
+    "insertId": "6g0vutciibe4r306",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:16.052500495Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:51910 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:15.324701937Z"
+  },
+  {
+    "insertId": "b2rhyj18uyco8i8t",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:16.024041966Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:48802 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:14.098519986Z"
+  },
+  {
+    "insertId": "pkbhuf2dzqzl2lcq",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:16.052500495Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:51908 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:14.068255896Z"
+  },
+  {
+    "insertId": "0w2kfjg55fxz3guf",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:15.489727354Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:58334 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:10.688989291Z"
+  },
+  {
+    "insertId": "b5fgwkogfgmien35",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:10.579041552Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:44290 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:06.338802987Z"
+  },
+  {
+    "insertId": "bfweycvj6tmic7uk",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:10.930181990Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33216 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:06.329142683Z"
+  },
+  {
+    "insertId": "us49x4esos2cjmbu",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:05.928361488Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49762 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:31:05.324717921Z"
+  },
+  {
+    "insertId": "nczrbmfcgxnjuerl",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:00.578702850Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:53140 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:56.338489438Z"
+  },
+  {
+    "insertId": "a6wljveg0g3r31tf",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:31:01.018837080Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:54810 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:56.327962964Z"
+  },
+  {
+    "insertId": "uwf5869bwcs0iu8t",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:56.020492740Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:47534 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:55.323599538Z"
+  },
+  {
+    "insertId": "704m7fx1tcih8ohs",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:56.025974349Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:54798 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:54.098479122Z"
+  },
+  {
+    "insertId": "pbxgwiu8m0hhg4te",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:56.020492740Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:47524 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:54.057329909Z"
+  },
+  {
+    "insertId": "1f3x40ag35q3dpzv",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:55.495147429Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:53132 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:50.689308431Z"
+  },
+  {
+    "insertId": "39nh2ffxxxd9dxog",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:50.575026855Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:33436 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:46.339546872Z"
+  },
+  {
+    "insertId": "tmjdku7vvo920huy",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:50.932835073Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:47062 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:46.328467999Z"
+  },
+  {
+    "insertId": "jvvaptqrxfnbgo4n",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:45.928040249Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33154 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:45.323661381Z"
+  },
+  {
+    "insertId": "xtlmnbyrjmtqadcn",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:40.513071232Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:34964 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:36.339169723Z"
+  },
+  {
+    "insertId": "yiwcfsjnjge958p3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:41.013424945Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33246 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:36.328402456Z"
+  },
+  {
+    "insertId": "qhumrag0fdcehcyw",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:35.929749551Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49880 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:35.323519817Z"
+  },
+  {
+    "insertId": "unafifp76pobdpt6",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:35.979696489Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33242 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:34.098804482Z"
+  },
+  {
+    "insertId": "7imxha9zfdse1ew3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:35.929749551Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:49876 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:34.057639501Z"
+  },
+  {
+    "insertId": "or0iznuddnuws9n3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:35.568882510Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:34952 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:30.688608483Z"
+  },
+  {
+    "insertId": "8ljvhn1bi16c64pf",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:30.508214202Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:43760 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:26.339056173Z"
+  },
+  {
+    "insertId": "kmbs1uyscpwnesm1",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:30.925197187Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:51044 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:26.328992895Z"
+  },
+  {
+    "insertId": "yimjixhgq6i4j74y",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:25.925682735Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:40378 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:25.323557810Z"
+  },
+  {
+    "insertId": "os4vq2d38pl770b3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:20.491910033Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:52770 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:16.339694928Z"
+  },
+  {
+    "insertId": "htseowkkoya9ud23",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:20.929100876Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33646 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:16.327623255Z"
+  },
+  {
+    "insertId": "kvg4quuw6oaxyun1",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:15.928685718Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:60996 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:15.323814275Z"
+  },
+  {
+    "insertId": "ddkmazaoz7bzd4sz",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:15.991941219Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:33638 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:14.099323752Z"
+  },
+  {
+    "insertId": "4u9qdeit33gn3ccp",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:15.928685718Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:60988 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:14.056681436Z"
+  },
+  {
+    "insertId": "k0fip9dmxdu1efd5",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:15.590408797Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:52754 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:10.689702123Z"
+  },
+  {
+    "insertId": "k3fb3bcmkip430n5",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:10.490213947Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:33728 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:06.340142047Z"
+  },
+  {
+    "insertId": "xr1lir39qib1g3ht",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:10.932195700Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:54920 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:06.327611446Z"
+  },
+  {
+    "insertId": "vasf0itm9ifcern6",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:05.932551354Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:35738 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:30:05.323750262Z"
+  },
+  {
+    "insertId": "rf8spiz1dis20tq4",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:00.548755750Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:38038 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:56.339901274Z"
+  },
+  {
+    "insertId": "cyi07mgi97lixkei",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:30:01.002306685Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:50620 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:56.327610922Z"
+  },
+  {
+    "insertId": "gx5ur1i0creoe0w0",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:55.922556631Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:48866 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:55.323832056Z"
+  },
+  {
+    "insertId": "nba0m27lfbar97lv",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:56.009361530Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:50606 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:54.099460412Z"
+  },
+  {
+    "insertId": "n9lo3y0vmcpct3s1",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:55.922556631Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:48854 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:54.057545188Z"
+  },
+  {
+    "insertId": "yvkycrwghlct2eu3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:55.494713722Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:38026 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:50.688838132Z"
+  },
+  {
+    "insertId": "77vhdxeihb8pktiu",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:50.488555453Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:39452 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:46.339165638Z"
+  },
+  {
+    "insertId": "o5ni0er8e2q5d2y3",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:51.014149912Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:45834 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:46.328585860Z"
+  },
+  {
+    "insertId": "55vyuiwhr6k987g7",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:46.027700689Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:55888 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:45.323684464Z"
+  },
+  {
+    "insertId": "t71kq40gofdj9pcb",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:40.556279524Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:44430 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:36.338588083Z"
+  },
+  {
+    "insertId": "xkvb81rd6ems8302",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:40.995811898Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:53674 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:36.328200930Z"
+  },
+  {
+    "insertId": "xvfcg2zvltyf0cci",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:36.038335945Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:42444 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:35.323715679Z"
+  },
+  {
+    "insertId": "6am16mdoib9xgra0",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:35.922185028Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-vdqv9",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:53664 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:34.099290443Z"
+  },
+  {
+    "insertId": "m5b7wcerg5y726c4",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-wh71",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:36.038335945Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-qgchj",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.0.1:42436 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:34.057554650Z"
+  },
+  {
+    "insertId": "yis7nibg7dp4b1jm",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:35.506142357Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:44420 - \"GET /live_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:30.689018727Z"
+  },
+  {
+    "insertId": "ppfwcto3eabdm4yd",
+    "labels": {
+      "compute.googleapis.com/resource_name": "gke-test-iris-v1-default-pool-2b2bdb3b-pf1q",
+      "k8s-pod/app": "iris-api-w7",
+      "k8s-pod/pod-template-hash": "7f9c976bd9",
+      "k8s-pod/topology_kubernetes_io/region": "us-central1",
+      "k8s-pod/topology_kubernetes_io/zone": "us-central1-a",
+      "logging.gke.io/top_level_controller_name": "iris-api",
+      "logging.gke.io/top_level_controller_type": "Deployment"
+    },
+    "logName": "projects/project-eac74fb9-0e15-492a-ab1/logs/stdout",
+    "receiveTimestamp": "2026-08-01T16:29:30.492346409Z",
+    "resource": {
+      "labels": {
+        "cluster_name": "test-iris-v1",
+        "container_name": "iris-api",
+        "location": "us-central1-a",
+        "namespace_name": "default",
+        "pod_name": "iris-api-7f9c976bd9-pq65q",
+        "project_id": "project-eac74fb9-0e15-492a-ab1"
+      },
+      "type": "k8s_container"
+    },
+    "severity": "INFO",
+    "textPayload": "INFO:     10.84.1.1:57434 - \"GET /ready_check HTTP/1.1\" 200 OK",
+    "timestamp": "2026-08-01T16:29:26.338281371Z"
+  }
+]
