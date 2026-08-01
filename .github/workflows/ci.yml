@@ -22,6 +22,11 @@ jobs:
 
       - uses: google-github-actions/setup-gcloud@v2
 
+      - name: Install gke-gcloud-auth-plugin
+        run: |
+          gcloud components install gke-gcloud-auth-plugin --quiet
+          echo "USE_GKE_GCLOUD_AUTH_PLUGIN=True" >> $GITHUB_ENV
+
       - name: Configure Docker auth
         run: gcloud auth configure-docker us-central1-docker.pkg.dev
 
@@ -55,6 +60,11 @@ jobs:
           service_account: "github-ci-dvc@project-eac74fb9-0e15-492a-ab1.iam.gserviceaccount.com"
 
       - uses: google-github-actions/setup-gcloud@v2
+
+      - name: Install gke-gcloud-auth-plugin
+        run: |
+          gcloud components install gke-gcloud-auth-plugin --quiet
+          echo "USE_GKE_GCLOUD_AUTH_PLUGIN=True" >> $GITHUB_ENV
 
       - name: Get GKE credentials
         run: gcloud container clusters get-credentials test-iris-v1 --zone=us-central1-a
