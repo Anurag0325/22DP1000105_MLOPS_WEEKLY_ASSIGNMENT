@@ -1,0 +1,14 @@
+Running 1m test @ http://136.65.192.22/predict
+  4 threads and 2000 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.00us    0.00us   0.00us    -nan%
+    Req/Sec   321.21    300.26     0.96k    46.67%
+  Latency Distribution
+     50%    0.00us
+     75%    0.00us
+     90%    0.00us
+     99%    0.00us
+  3056 requests in 1.00m, 578.19KB read
+  Socket errors: connect 983, read 1017, write 17, timeout 3056
+Requests/sec:     50.87
+Transfer/sec:      9.62KB
