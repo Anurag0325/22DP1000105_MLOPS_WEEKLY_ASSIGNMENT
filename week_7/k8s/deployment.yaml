@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iris-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: iris-api-w7
+  template:
+    metadata:
+      labels:
+        app: iris-api-w7
+    spec:
+      containers:
+        - name: iris-api
+          image: us-central1-docker.pkg.dev/project-eac74fb9-0e15-492a-ab1/iris-repo/iris-api:latest
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /ready_check
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /live_check
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "256Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"

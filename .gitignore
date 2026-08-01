@@ -18,3 +18,6 @@ training_log.json
 .env/
 __pycache__/
 *.pyc
+week_7/app/model.joblib
+__pycache__/
+*.pyc
