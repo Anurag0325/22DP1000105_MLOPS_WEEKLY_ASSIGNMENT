@@ -1,100 +1,70 @@
+# Week 8 — MLSecOps: Data Poisoning on the IRIS Pipeline
 
-# Week 6 — Continuous Deployment for IRIS Inference API
-
-This branch (`week_6`) contains the CD pipeline that containerizes the IRIS
-inference API, pushes it to Google Artifact Registry, and deploys it to
-Google Kubernetes Engine (GKE) — fully automated via GitHub Actions.
-
-## Files in this branch
-
+## Files
 | File | Purpose |
 |---|---|
-| `app/iris_fastapi.py` | FastAPI inference service. Loads `iris_model.pkl` and exposes `/` and `/predict/` endpoints on port 8200. |
-| `app/requirements.txt` | Python dependencies for the API (FastAPI, uvicorn, scikit-learn, pandas, mlflow). |
-| `app/fetch_model.py` | Build-time script that pulls the current **champion** model from the MLflow Model Registry and saves it as `iris_model.pkl` inside the image (Task 6). |
-| `Dockerfile` | Builds the API image: installs dependencies, runs `fetch_model.py` to bundle the MLflow champion model, exposes port 8200, and starts uvicorn. |
-| `k8s/deployment.yaml` | Kubernetes Deployment manifest — 2 replicas of the `iris-api` container on port 8200, with a readiness probe on `/`. |
-| `k8s/service.yaml` | Kubernetes Service (`LoadBalancer`) exposing the Deployment on port 80, routed to container port 8200. |
-| `.github/workflows/cd.yaml` | GitHub Actions workflow: builds the Docker image (fetching the MLflow model at build time), pushes it to Artifact Registry, then deploys it to the GKE cluster. |
+| `scripts/poison_iris.py` | Task 2 — overwrites `data/iris.csv` from `data/iris_clean_master.csv` at a given corruption % (0/5/10/50). Replaces all 4 features with random out-of-range values and assigns a random class label for the selected fraction of rows. |
+| `scripts/train.py` | Task 3 — trains a `DecisionTreeClassifier` on the current `data/iris.csv`, logs `poison_level` as a param and accuracy/precision/recall/f1 as metrics to MLflow (experiment `iris-mlsecops-poisoning`). |
+| `scripts/compare_results.py` | Task 4 — pulls all 4 MLflow runs into `data/comparison_table.csv` and `data/degradation_plot.png`. |
+| `data/iris_clean_master.csv` | Untouched clean baseline, source for every poisoned variant. |
+| `data/iris.csv` + `data/iris.csv.dvc` | DVC-tracked, one commit per poison level (0/5/10/50%) — see git log for lineage. |
+| `data/comparison_table.csv`, `data/degradation_plot.png` | Task 4 outputs. |
 
-Note: `app/iris_model.pkl` is intentionally **not** committed to this repo
-(see `.gitignore`) — it is fetched fresh from the MLflow Model Registry
-during the Docker build, so the container never depends on a stale local
-copy.
-
-## Task summary
-
-**Task 1 — Pod vs Container**
-Explained in the video screencast: a Docker container is one running
-instance of an image; a Kubernetes Pod is the smallest deployable unit in
-K8s and wraps one or more containers that share networking/storage.
-Kubernetes schedules, scales, and heals Pods, not raw containers.
-
-**Task 2 — Dockerfile for the IRIS API**
-`app/iris_fastapi.py` serves predictions via FastAPI on port 8200.
-`Dockerfile` packages it with all dependencies. Verified locally with
-`docker build` + `docker run` + `curl` against `/predict/`.
-
-**Task 3 — GCP Service Account**
-Service account `github-cd-deployer` created with:
-- `roles/artifactregistry.writer`
-- `roles/container.developer`
-- `roles/iam.serviceAccountUser`
-
-Authenticated via Workload Identity Federation (pool `github-pool`,
-provider `github-provider`) — no service account key files used.
-Configured as GitHub Actions secrets: `GCP_PROJECT_ID`, `GCP_WIF_PROVIDER`,
-`GCP_SA_EMAIL`.
-
-**Task 4 — Build & Push via GitHub Actions**
-`.github/workflows/cd.yaml` (`build-and-push` job) builds the Docker image
-and pushes it to Artifact Registry repo `my-repo` in `us-central1`, tagged
-with the commit SHA.
-
-**Task 5 — Deploy to GKE**
-`.github/workflows/cd.yaml` (`deploy` job) authenticates to the
-`test-iris-v1` GKE cluster (`us-central1-a`), substitutes the freshly built
-image tag into `k8s/deployment.yaml`, and applies both manifests. Verified
-with `kubectl get pods` / `kubectl get service` and a live `curl` against
-the LoadBalancer's external IP, returning correct predictions
-(e.g. `{"predicted_class":"setosa"}`).
-
-**Task 6 (Optional) — MLflow Model in the Container**
-`app/fetch_model.py` connects to the MLflow tracking server, loads the
-model registered as `iris-classifier` under the `champion` alias via
-`mlflow.sklearn.load_model()`, and re-serializes it as `iris_model.pkl`
-during the Docker build (`RUN python fetch_model.py`). The deployed API
-serves predictions using this registry-sourced model with no MLflow access
-required at runtime.
-
-## Known limitation
-
-The MLflow tracking server used for Task 6 runs on a Vertex AI Workbench
-instance rather than a persistent managed service, and the instance
-auto-stops after a period of idle time. This means:
-- The MLflow server (and its external IP) must be running whenever the
-  GitHub Actions workflow builds the image, since `fetch_model.py` needs
-  live access to the registry at build time.
-- The `MLFLOW_TRACKING_URI` GitHub Actions **variable** must be updated if
-  the Workbench VM's external IP changes after a restart.
-
-This is a reasonable tradeoff for an assignment environment; a production
-setup would host MLflow as a persistent service (e.g. Cloud Run or a
-dedicated always-on VM with a static IP) instead.
-
-## Reproducing locally
-
+## Run order
 ```bash
-cd app && cd ..
-docker build --build-arg MLFLOW_TRACKING_URI=<mlflow_server_url> -t iris-api .
-docker run -d -p 8200:8200 iris-api
-curl -X POST "http://localhost:8200/predict/" -H "Content-Type: application/json" \
-  -d '{"sepal_length":5.1,"sepal_width":3.5,"petal_length":1.4,"petal_width":0.2}'
+source myenv/bin/activate
+export MLFLOW_TRACKING_URI=sqlite:///mlflow.db
+
+python scripts/poison_iris.py --pct <N>       # N = 0, 5, 10, or 50
+dvc add data/iris.csv
+git add data/iris.csv.dvc && git commit -m "Poisoning N% of input data" && dvc push
+python scripts/train.py --poison-level <N>
+git push origin week_8
+
+mlflow ui --backend-store-uri sqlite:///mlflow.db --host 0.0.0.0 --port 8080
+python scripts/compare_results.py
 ```
+
+## Results
+
+| Poison % | Accuracy | Precision | Recall | F1 |
+|---|---|---|---|---|
+| 0  | 0.9697 | 0.9722 | 0.9697 | 0.9696 |
+| 5  | 0.9545 | 0.9598 | 0.9545 | 0.9543 |
+| 10 | 0.8788 | 0.8831 | 0.8788 | 0.8786 |
+| 50 | 0.7121 | 0.7063 | 0.7121 | 0.7075 |
+
+## Task 1 — ML Threat Vectors (explained in screencast)
+Covered: data poisoning (data ingestion/training), backdoor injection (training),
+adversarial examples (inference), model extraction (inference API), prompt
+injection (LLM inference) — stage, mechanism, and a real-world example for each.
+
+## Task 4 — Analysis
+- Noticeable degradation begins at 5% (96.97% → 95.45%); the sharp drop is
+  between 10% and 50% (87.88% → 71.21%).
+- All four metrics move together here since poisoning is untargeted
+  (random features + random label), affecting all three classes roughly evenly.
+- At 50% corruption the model still scores 71.21% accuracy — well above the
+  33% chance floor for 3 balanced classes — so it's still learning real signal
+  from the remaining ~50% clean data, not behaving randomly.
+
+## Task 5 — Mitigation & Data Quantity vs. Quality (explained in screencast)
+- **Detection/mitigation**: schema validation (range/type checks before
+  training), statistical/drift profiling against a trusted reference
+  distribution, anomaly detection (e.g. isolation forest) on incoming samples,
+  DVC-based data provenance (as demonstrated here — each poison level is a
+  separate, hash-verified commit), and a held-out validation set never
+  sourced from the same ingestion pipeline.
+- **Quantity vs. quality**: more data does not compensate for a fixed
+  *poisoned ratio* — doubling a dataset that's 10% poisoned still leaves it
+  10% poisoned. What matters is the clean-data ratio, not raw volume; cleaning
+  before scaling is the effective lever. The 50% run above is the empirical
+  case — quantity alone can't rescue a pipeline once quality drops past a
+  threshold; contaminated data must be filtered first.
 
 ## Student Info
 
 * ID: 22DP1000105
 * Course: MLOps Weekly Assignment
-* Week: 6
+* Week: 8
 * Term: MAY 2026
