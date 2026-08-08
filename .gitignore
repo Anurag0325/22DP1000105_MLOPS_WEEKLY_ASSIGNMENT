@@ -18,3 +18,5 @@ training_log.json
 .env/
 __pycache__/
 *.pyc
+mlruns/
+mlflow.db
